@@ -1,24 +1,25 @@
 package tictactoe;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 
 public class TicTacToeSpec {
 
-    @ExtendWith
-    public ExpectedException exception = ExpectedException.none();
-    private TicTacToe ticTacToe;
+    private TicTacToe ttt;
 
     @BeforeEach
-    public final void before() {
-        ticTacToe = new TicTacToe();
-    }
-    @Test
-    public void whenXOutsideBoardThenRuntimeException()
+    public void setUp() throws Exception
     {
-        exception.expect(RuntimeException.class);
-        ticTacToe.play(5, 2);
+        ttt = new TicTacToe();
+    }
+
+    @Test
+    public void whenXOutsideBoardException()
+    {
+        Assertions.assertThrows(RuntimeException.class, () -> {
+            ttt.play(4, 2);
+        });
     }
 
 }
