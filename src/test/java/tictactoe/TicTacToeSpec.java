@@ -18,7 +18,7 @@ public class TicTacToeSpec {
     public void whenXOutsideBoardException()
     {
         Assertions.assertThrows(RuntimeException.class, () -> {
-            ttt.play(4, 2);
+            ttt.play(5, 2);
         });
     }
 
