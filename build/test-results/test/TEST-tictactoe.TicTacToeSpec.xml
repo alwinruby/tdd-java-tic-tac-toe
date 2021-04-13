@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tictactoe.TicTacToeSpec" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-04-12T04:52:04" hostname="Alwins-Air" time="0.045">
+<testsuite name="tictactoe.TicTacToeSpec" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-04-13T05:02:40" hostname="Alwins-Air" time="0.075">
   <properties/>
-  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.045"/>
+  <testcase name="whenYOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.064"/>
+  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

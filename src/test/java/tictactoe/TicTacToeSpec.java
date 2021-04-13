@@ -22,4 +22,14 @@ public class TicTacToeSpec {
         });
     }
 
+    @Test
+    public void whenYOutsideBoardException()
+    {
+        Assertions.assertThrows(RuntimeException.class, () -> {
+            ttt.play(2, 5);
+        });
+    }
+
+
+
 }

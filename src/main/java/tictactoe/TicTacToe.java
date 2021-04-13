@@ -8,6 +8,10 @@ public class TicTacToe {
             throw new RuntimeException("X is outside board");
             //throw new java.lang.RuntimeException("X is outside board");
         }
+
+        if (y < 1 || y > 3) {
+            throw new java.lang.RuntimeException("Y is outside board");
+        }
     }
 
 }
