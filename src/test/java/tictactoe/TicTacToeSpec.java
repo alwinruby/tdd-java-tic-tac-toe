@@ -30,6 +30,17 @@ public class TicTacToeSpec {
         });
     }
 
+    @Test
+    public void whenOccupiedException()
+    {
+        ttt.play(1, 3);       // imitate player X places a piece in (1,3)
+
+        // imitate player O tries to place a piece in an occupied space (1,3)
+        Assertions.assertThrows(RuntimeException.class, () -> {
+            ttt.play(1, 3);
+        });
+    }
+
 
 
 }
