@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tictactoe.TicTacToeSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-04-15T04:22:24" hostname="Alwins-Air" time="0.132">
+<testsuite name="tictactoe.TicTacToeSpec" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-04-15T05:12:30" hostname="Alwins-Air" time="0.052">
   <properties/>
-  <testcase name="whenYOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.071"/>
-  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.03"/>
-  <testcase name="whenOccupiedException()" classname="tictactoe.TicTacToeSpec" time="0.015"/>
+  <testcase name="whenYOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.043"/>
+  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.004"/>
+  <testcase name="whenOccupiedException()" classname="tictactoe.TicTacToeSpec" time="0.003"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
