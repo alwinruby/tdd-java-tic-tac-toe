@@ -41,4 +41,13 @@ public class TicTacToeSpec {
         });
     }
 
+    @Test
+    public void whenOccupiedThenRuntimeException() {
+        ttt.play(2, 1);
+        Assertions.assertThrows(RuntimeException.class, () -> {
+            ttt.play(2, 1);
+        });
+    }
+
+
 }
