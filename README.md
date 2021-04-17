@@ -14,3 +14,13 @@ We can split this requirement into three tests:
     • When a piece is placed on an occupied space, then RuntimeException is thrown.
 
 
+#### Requirement 2
+
+There should be a way to find out which player should play next.
+
+We can split this requirement into three tests:
+
+    • The first turn should be played by played X
+    • If the last turn was played by X, then the next turn should be played by O
+    • If the last turn was played by O, then the next turn should be played by X
+

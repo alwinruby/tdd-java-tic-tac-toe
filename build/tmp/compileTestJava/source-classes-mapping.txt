@@ -1,2 +1,0 @@
-tictactoe/TicTacToeSpec.java
- tictactoe.TicTacToeSpec

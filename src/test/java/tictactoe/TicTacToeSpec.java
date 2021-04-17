@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 public class TicTacToeSpec {
 
     private TicTacToe ttt;
@@ -47,6 +49,16 @@ public class TicTacToeSpec {
         Assertions.assertThrows(RuntimeException.class, () -> {
             ttt.play(2, 1);
         });
+    }
+
+    @Test
+    public void givenLastTurnWasX_NowPlayerOTurn()
+    {
+        // X played first
+        ttt.play(1,1);
+
+        // check if the next player is O
+        assertEquals("O", ttt.nextPlayer());
     }
 
 
