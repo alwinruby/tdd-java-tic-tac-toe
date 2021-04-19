@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tictactoe.TicTacToeSpec" tests="5" skipped="0" failures="1" errors="0" timestamp="2021-04-18T07:18:53" hostname="Alwins-MacBook-Air.local" time="0.076">
+<testsuite name="tictactoe.TicTacToeSpec" tests="5" skipped="0" failures="1" errors="0" timestamp="2021-04-19T04:18:22" hostname="Alwins-Air" time="0.386">
   <properties/>
-  <testcase name="givenLastTurnWasX_NowPlayerOTurn()" classname="tictactoe.TicTacToeSpec" time="0.055">
+  <testcase name="givenLastTurnWasX_NowPlayerOTurn()" classname="tictactoe.TicTacToeSpec" time="0.199">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;O&gt; but was: &lt;X&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;O&gt; but was: &lt;X&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -101,10 +101,10 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="whenYOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.005"/>
+  <testcase name="whenYOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.029"/>
   <testcase name="whenOccupiedThenRuntimeException()" classname="tictactoe.TicTacToeSpec" time="0.003"/>
-  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.003"/>
-  <testcase name="whenOccupiedException()" classname="tictactoe.TicTacToeSpec" time="0.003"/>
+  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.002"/>
+  <testcase name="whenOccupiedException()" classname="tictactoe.TicTacToeSpec" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

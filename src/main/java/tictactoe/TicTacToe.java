@@ -9,6 +9,8 @@ public class TicTacToe {
     private Character[][] board = {{'\0', '\0', '\0'},
             {'\0', '\0', '\0'}, {'\0', '\0', '\0'}};
 
+    private String lastPlayer = "";
+
     public void play(int x, int y)
     {
 //        checkAxis(x);
@@ -46,7 +48,12 @@ public class TicTacToe {
 
     public String nextPlayer()
     {
-        return "X";
+        if (lastPlayer != "X")
+            lastPlayer = "X";
+        else
+            lastPlayer = "O";
+
+        return lastPlayer;
     }
 
 }

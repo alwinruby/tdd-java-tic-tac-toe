@@ -61,5 +61,16 @@ public class TicTacToeSpec {
         assertEquals("O", ttt.nextPlayer());
     }
 
+    @Test
+    void givenLastTurnWasO_NowPlayerXTurn()
+    {
+        ttt.play(1,1);        // X played first
+        ttt.play(3,3);        // O played first
+
+        // check if the next player is X
+        assertEquals("X", ttt.nextPlayer());
+    }
+
+
 
 }
