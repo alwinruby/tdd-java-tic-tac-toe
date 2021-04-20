@@ -1,35 +1,19 @@
 package tictactoe;
 
-public class TicTacToe {
-
-//    private String[][] board = { {"", "", ""},
-//            {"", "", ""},
-//            {"", "", ""} };
-
-    private Character[][] board = {{'\0', '\0', '\0'},
-            {'\0', '\0', '\0'}, {'\0', '\0', '\0'}};
+public class TicTacToe
+{
+    private String[][] board = { {"", "", ""},
+            {"", "", ""},
+            {"", "", ""} };
 
     private String lastPlayer = "";
 
     public void play(int x, int y)
     {
-//        checkAxis(x);
-//        checkAxis(y);
-//        setOccupied(x, y);
-
-        if (x < 1 || x > 3) {
-            throw
-                    new RuntimeException("X is outside board");
-        } else if (y < 1 || y > 3) {
-            throw
-                    new RuntimeException("Y is outside board");
-        }
-        if (board[x - 1][y - 1] != '\0') {
-            throw
-                    new RuntimeException("Box is occupied");
-        } else {
-            board[x - 1][y - 1] = 'X';
-        }
+        checkAxis(x);
+        checkAxis(y);
+        lastPlayer = nextPlayer();
+        setOccupied(x, y);
     }
 
     private void checkAxis(int axis)
@@ -40,10 +24,10 @@ public class TicTacToe {
 
     private void setOccupied(int x, int y)
     {
-        if (board[x-1][y-1] != '\0')
-            throw new java.lang.RuntimeException("Box is occupied");
+        if (board[x-1][y-1] != "")
+            throw new java.lang.RuntimeException("Place is occupied");
         else
-            board[x-1][y-1] = 'X';
+            board[x-1][y-1] = lastPlayer;
     }
 
     public String nextPlayer()
@@ -55,5 +39,4 @@ public class TicTacToe {
 
         return lastPlayer;
     }
-
 }
