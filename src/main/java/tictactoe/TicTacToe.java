@@ -8,12 +8,13 @@ public class TicTacToe
 
     private String lastPlayer = "";
 
-    public void play(int x, int y)
+    public String play(int x, int y)
     {
         checkAxis(x);
         checkAxis(y);
         lastPlayer = nextPlayer();
         setOccupied(x, y);
+        return "No winner";
     }
 
     private void checkAxis(int axis)

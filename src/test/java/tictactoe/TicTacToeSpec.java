@@ -62,15 +62,10 @@ public class TicTacToeSpec {
     }
 
     @Test
-    void givenLastTurnWasO_NowPlayerXTurn()
+    public void whenNoWinner()
     {
-        ttt.play(1,1);        // X played first
-        ttt.play(3,3);        // O played first
-
-        // check if the next player is X
-        assertEquals("X", ttt.nextPlayer());
+        String gameResult = ttt.play(1,1);
+        assertEquals("No winner", gameResult);
     }
-
-
 
 }
