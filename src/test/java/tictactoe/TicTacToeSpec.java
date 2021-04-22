@@ -68,4 +68,15 @@ public class TicTacToeSpec {
         assertEquals("No winner", gameResult);
     }
 
+    @Test
+    public void whenWinWithHorizontalLine()
+    {
+        ttt.play(1, 1);         // X
+        ttt.play(1, 2);         // O
+        ttt.play(2, 1);         // X
+        ttt.play(2, 2);         // O
+        String gameResult = ttt.play(3, 1);    // X
+        assertEquals("X is the winner", gameResult);
+    }
+
 }
