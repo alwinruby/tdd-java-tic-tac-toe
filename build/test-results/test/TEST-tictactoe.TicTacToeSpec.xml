@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tictactoe.TicTacToeSpec" tests="7" skipped="0" failures="1" errors="0" timestamp="2021-04-22T02:49:53" hostname="Alwins-Air" time="0.263">
+<testsuite name="tictactoe.TicTacToeSpec" tests="7" skipped="0" failures="1" errors="0" timestamp="2021-04-23T05:40:35" hostname="Alwins-MacBook-Air.local" time="0.153">
   <properties/>
-  <testcase name="givenLastTurnWasX_NowPlayerOTurn()" classname="tictactoe.TicTacToeSpec" time="0.035"/>
-  <testcase name="whenWinWithHorizontalLine()" classname="tictactoe.TicTacToeSpec" time="0.02">
+  <testcase name="givenLastTurnWasX_NowPlayerOTurn()" classname="tictactoe.TicTacToeSpec" time="0.049"/>
+  <testcase name="whenWinWithHorizontalLine()" classname="tictactoe.TicTacToeSpec" time="0.009">
     <failure message="org.opentest4j.AssertionFailedError: expected: &lt;X is the winner&gt; but was: &lt;No winner&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: expected: &lt;X is the winner&gt; but was: &lt;No winner&gt;
 	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
 	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
@@ -102,10 +102,10 @@
 	at java.base/java.lang.Thread.run(Thread.java:834)
 </failure>
   </testcase>
-  <testcase name="whenYOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.065"/>
-  <testcase name="whenOccupiedThenRuntimeException()" classname="tictactoe.TicTacToeSpec" time="0.106"/>
-  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.002"/>
-  <testcase name="whenOccupiedException()" classname="tictactoe.TicTacToeSpec" time="0.01"/>
+  <testcase name="whenYOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.008"/>
+  <testcase name="whenOccupiedThenRuntimeException()" classname="tictactoe.TicTacToeSpec" time="0.01"/>
+  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.007"/>
+  <testcase name="whenOccupiedException()" classname="tictactoe.TicTacToeSpec" time="0.025"/>
   <testcase name="whenNoWinner()" classname="tictactoe.TicTacToeSpec" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
