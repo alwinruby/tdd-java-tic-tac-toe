@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="tictactoe.TicTacToeSpec" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-04-24T05:29:03" hostname="Alwins-Air" time="0.085">
+<testsuite name="tictactoe.TicTacToeSpec" tests="7" skipped="0" failures="0" errors="0" timestamp="2021-04-25T07:25:27" hostname="Alwins-Air" time="0.22">
   <properties/>
-  <testcase name="givenLastTurnWasX_NowPlayerOTurn()" classname="tictactoe.TicTacToeSpec" time="0.055"/>
-  <testcase name="whenWinWithHorizontalLine()" classname="tictactoe.TicTacToeSpec" time="0.003"/>
-  <testcase name="whenYOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.006"/>
-  <testcase name="whenOccupiedThenRuntimeException()" classname="tictactoe.TicTacToeSpec" time="0.004"/>
-  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.002"/>
-  <testcase name="whenOccupiedException()" classname="tictactoe.TicTacToeSpec" time="0.002"/>
-  <testcase name="whenNoWinner()" classname="tictactoe.TicTacToeSpec" time="0.001"/>
+  <testcase name="givenLastTurnWasX_NowPlayerOTurn()" classname="tictactoe.TicTacToeSpec" time="0.068"/>
+  <testcase name="whenWinWithHorizontalLine()" classname="tictactoe.TicTacToeSpec" time="0.006"/>
+  <testcase name="whenYOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.012"/>
+  <testcase name="whenOccupiedThenRuntimeException()" classname="tictactoe.TicTacToeSpec" time="0.002"/>
+  <testcase name="whenXOutsideBoardException()" classname="tictactoe.TicTacToeSpec" time="0.003"/>
+  <testcase name="whenOccupiedException()" classname="tictactoe.TicTacToeSpec" time="0.01"/>
+  <testcase name="whenNoWinner()" classname="tictactoe.TicTacToeSpec" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

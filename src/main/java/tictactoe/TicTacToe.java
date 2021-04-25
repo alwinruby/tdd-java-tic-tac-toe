@@ -8,6 +8,24 @@ public class TicTacToe
 
     private String lastPlayer = "";
 
+//    public String play(int x, int y)
+//    {
+//        checkAxis(x);
+//        checkAxis(y);
+//        lastPlayer = nextPlayer();
+//        setOccupied(x, y);
+//
+//        for (int i=0; i<3; i++)
+//        {
+//            if (board[0][i] == lastPlayer &&
+//                    board[1][i] == lastPlayer &&
+//                    board[2][i] == lastPlayer)
+//                return lastPlayer + " is the winner";
+//        }
+//
+//        return "No winner";
+//    }
+
     public String play(int x, int y)
     {
         checkAxis(x);
@@ -15,15 +33,21 @@ public class TicTacToe
         lastPlayer = nextPlayer();
         setOccupied(x, y);
 
+        if (isWin())
+            return lastPlayer + " is the winner";
+        return "No winner";
+    }
+
+    private boolean isWin()
+    {
         for (int i=0; i<3; i++)
         {
             if (board[0][i] == lastPlayer &&
                     board[1][i] == lastPlayer &&
                     board[2][i] == lastPlayer)
-                return lastPlayer + " is the winner";
+                return true;
         }
-
-        return "No winner";
+        return false;
     }
 
     private void checkAxis(int axis)
