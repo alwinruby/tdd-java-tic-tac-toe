@@ -79,5 +79,16 @@ public class TicTacToeSpec {
         assertEquals("X is the winner", gameResult);
     }
 
+    @Test
+    public void whenWinWithVerticalLine()
+    {
+        ttt.play(2, 1);         // X
+        ttt.play(1, 1);         // O
+        ttt.play(3, 1);         // X
+        ttt.play(1, 2);         // O
+        ttt.play(2, 2);         // X
+        String gameResult = ttt.play(1, 3);    // O
+        assertEquals("O is the winner", gameResult);
+    }
 
 }
