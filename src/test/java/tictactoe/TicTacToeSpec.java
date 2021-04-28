@@ -91,4 +91,15 @@ public class TicTacToeSpec {
         assertEquals("O is the winner", gameResult);
     }
 
+    @Test
+    public void whenWinWithDiagonalTopToBottom()
+    {
+        ttt.play(1, 1);         // X
+        ttt.play(1, 2);         // O
+        ttt.play(3, 3);         // X
+        ttt.play(1, 3);         // O
+        String gameResult = ttt.play(2, 2);    // X
+        assertEquals("X is the winner", gameResult);
+    }
+
 }
