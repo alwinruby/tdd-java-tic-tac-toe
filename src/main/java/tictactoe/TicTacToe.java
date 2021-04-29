@@ -42,12 +42,15 @@ public class TicTacToe
     {
         for (int i=0; i<3; i++)
         {
-            if ( ( board[0][i] == lastPlayer &&       // check horizontal
+            if ( ( board[0][i] == lastPlayer &&    // check horizontal
                     board[1][i] == lastPlayer &&
                     board[2][i] == lastPlayer )  ||
-                    ( board[i][0] == lastPlayer &&       // check vertical
+                    ( board[i][0] == lastPlayer &&    // check vertical
                             board[i][1] == lastPlayer &&
-                            board[i][2] == lastPlayer ) )
+                            board[i][2] == lastPlayer )  ||
+                    ( board[0][0] == lastPlayer &&    // check diagonal (top to bottom)
+                            board[1][1] == lastPlayer &&
+                            board[2][2] == lastPlayer ) )
                 return true;
         }
         return false;
