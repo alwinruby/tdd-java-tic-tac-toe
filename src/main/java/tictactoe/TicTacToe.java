@@ -50,7 +50,10 @@ public class TicTacToe
                             board[i][2] == lastPlayer )  ||
                     ( board[0][0] == lastPlayer &&    // check diagonal (top to bottom)
                             board[1][1] == lastPlayer &&
-                            board[2][2] == lastPlayer ) )
+                            board[2][2] == lastPlayer )  ||
+                    ( board[0][2] == lastPlayer &&    // check diagonal (bottom to top)
+                            board[1][1] == lastPlayer &&
+                            board[2][0] == lastPlayer ) )
                 return true;
         }
         return false;
